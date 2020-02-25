@@ -1,21 +1,29 @@
 #include <iostream>
 #include <string>
-#include <vector>
-#include <map>
 using namespace std;
 
-int main() {
-    int a = 10;
-    int b = -20;
-    double c = 10.2;
-    char d = 'a';
-    string e = "hello world";
-
-    vector <int> f = {1, 2, 3};
-    
-    map<char, int> g;
-    
-    map<char, int> r;
-    r['b'] = 1;
-    g['a'] = 1;
+struct Book {
+    string name_of_book;
+    string author;
+    string age;
+    int pages;
 };
+
+
+int main() {
+    Book hobbit;
+    Book dve[2];
+
+    hobbit.name_of_book =  "Hobbit";
+    hobbit.author = "Tolkien";
+    hobbit.age = "1932";
+
+    
+
+    dve[0].name_of_book =  "Hobbit";
+    dve[0].author = "Tolkien";
+    dve[0].age = "1932";
+
+    std::cout << "Hello World!\n";
+}
+
