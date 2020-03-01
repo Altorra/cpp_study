@@ -3,11 +3,16 @@
 #include <vector>
 using namespace std;
 
+
+
+
 struct Book {
     string name_of_book;
     string author;
     string age;
     int pages;
+    vector<string> hobbits;
+    vector<string> wizards;
 };
 
 
@@ -22,8 +27,16 @@ int main() {
     hobbit.name_of_book =  "Hobbit";
     hobbit.author = "Tolkien";
     hobbit.age = "1932";
+    hobbit.hobbits.push_back("Bilbo Baggins");
+    hobbit.hobbits.push_back("Bungo Baggins");
+    hobbit.hobbits.push_back("Belladonna Took");
+    hobbit.hobbits.push_back("The Old Took");
+    hobbit.hobbits.push_back("Chubb");
+    hobbit.hobbits.push_back("The Sackville-Bagginses");
+    hobbit.hobbits.push_back("Bullroarer Took");
+    hobbit.wizards.push_back("Gandalf");
+    hobbit.wizards.push_back("Rodogast");
 
-    
 
     book1.name_of_book = "LOTR";
     book1.author = "Tolkien";
